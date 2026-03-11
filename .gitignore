@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ruff_cache/
+analysis_output.json
+deploy/hf_space_bundle/
+deploy/github_safe_bundle/

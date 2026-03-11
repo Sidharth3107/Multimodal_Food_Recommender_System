@@ -1,0 +1,98 @@
+{
+  "product_name": "Keto Nut Mix",
+  "safe_to_eat": true,
+  "status": "safe",
+  "risk_score": 10.36,
+  "risk_breakdown": {
+    "overall": 10.36,
+    "allergy_component": 0.0,
+    "diet_component": 0.0,
+    "nutrition_component": 33.07,
+    "vision_component": 25.0,
+    "detail": {
+      "allergy": 0.0,
+      "diet": 0.0,
+      "nutrition": 33.07,
+      "vision": 25.0,
+      "nutrition_nutrition_score": 29.09,
+      "nutrition_sugars": 8.89,
+      "nutrition_salt": 6.67,
+      "nutrition_saturated_fat": 80.0,
+      "nutrition_energy": 92.0
+    }
+  },
+  "summary": "Keto Nut Mix looks compatible with the current profile. Estimated risk score: 10.4/100.",
+  "warnings": [],
+  "health_notes": [
+    "Nutrition score is moderate at 1.0."
+  ],
+  "healthier_alternatives": [
+    {
+      "barcode": "00000001003",
+      "product_name": "Garden Salad Bowl",
+      "main_category": "Salad",
+      "nutrition_score": -2.0,
+      "nutrition_grade": "a",
+      "reason": "Same category with a lower nutrition risk score by 3.0 points."
+    }
+  ],
+  "detected_allergens": [],
+  "trace_allergens": [],
+  "diet_conflicts": [],
+  "avoid_matches": [],
+  "parsed_ingredients": [
+    "almonds",
+    "pecans",
+    "sunflower oil",
+    "sea salt"
+  ],
+  "evidence": {
+    "barcode_lookup_used": true,
+    "image_used": false,
+    "ingredients_used": true,
+    "resolved_category": "Nut Mix",
+    "barcode": "00000001004",
+    "nutrition": {
+      "nutrition_score": 1.0,
+      "energy_kj": 2300.0,
+      "fat_g": 50.0,
+      "saturated_fat_g": 4.0,
+      "sugars_g": 2.0,
+      "carbohydrates_g": 8.0,
+      "proteins_g": 18.0,
+      "salt_g": 0.1,
+      "nutrition_grade": "b"
+    },
+    "matched_allergen_terms": {
+      "tree nuts": [
+        "tree nuts"
+      ]
+    },
+    "matched_trace_terms": {},
+    "image_barcode_mismatch": null,
+    "inferred_style": null
+  },
+  "image_prediction": null,
+  "barcode_product": {
+    "barcode": "00000001004",
+    "normalized_barcode": "1004",
+    "product_name": "Keto Nut Mix",
+    "main_category": "Nut Mix",
+    "ingredients_text": "almonds, pecans, sunflower oil, sea salt",
+    "allergens_text": "tree nuts",
+    "traces_text": null,
+    "image_url": null,
+    "nutrition": {
+      "nutrition_score": 1.0,
+      "energy_kj": 2300.0,
+      "fat_g": 50.0,
+      "saturated_fat_g": 4.0,
+      "sugars_g": 2.0,
+      "carbohydrates_g": 8.0,
+      "proteins_g": 18.0,
+      "salt_g": 0.1,
+      "nutrition_grade": "b"
+    },
+    "source": "barcode"
+  }
+}

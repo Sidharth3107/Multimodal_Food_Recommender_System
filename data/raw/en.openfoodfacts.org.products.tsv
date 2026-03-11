@@ -1,0 +1,5 @@
+﻿code	product_name	main_category_en	ingredients_text	allergens_en	traces_en	nutrition-score-fr_100g	nutrition_grade_fr	energy_100g	fat_100g	saturated-fat_100g	sugars_100g	carbohydrates_100g	proteins_100g	salt_100g	image_url
+00000001001	Cheesy Pepperoni Pizza	Pizza	wheat flour, tomato sauce, mozzarella cheese, milk protein, pepperoni	milk,wheat		14	d	1200	14	6	5	30	12	1.20	
+00000001002	Roasted Veggie Pizza	Pizza	wheat flour, tomato sauce, peppers, onions, olive oil, basil	wheat		2	b	850	4	0.7	3	20	6	0.50	
+00000001003	Garden Salad Bowl	Salad	lettuce, tomato, cucumber, olive oil, lemon juice			-2	a	250	2	0.3	2	6	2	0.20	
+00000001004	Keto Nut Mix	Nut Mix	almonds, pecans, sunflower oil, sea salt	tree nuts		1	b	2300	50	4	2	8	18	0.10	

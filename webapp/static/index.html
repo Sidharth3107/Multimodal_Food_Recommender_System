@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nutriguard Studio</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar reveal">
+    <div class="brand-block">
+      <div class="brand-kicker">Food Intelligence Studio</div>
+      <div class="brand-mark">NUTRIGUARD</div>
+    </div>
+    <div class="topbar-note">Image + ingredients + barcode, unified into one decision engine.</div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">An editorial-grade safety cockpit</p>
+        <h1>Turn food photos, labels, and barcodes into a beautifully explained decision.</h1>
+        <p class="hero-text">
+          Nutriguard blends computer vision, nutrition data, allergy logic, and profile-aware recommendation into a single responsive workspace.
+        </p>
+        <div class="hero-pills">
+          <span>Offline-first</span>
+          <span>Confidence-aware</span>
+          <span>Responsive</span>
+          <span>Report-ready</span>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="hero-card hero-card-main">
+          <div class="card-label">Current mode</div>
+          <div class="card-value">Multimodal analysis</div>
+          <p>Low-confidence images are corrected using ingredient-pattern inference and structured nutrition evidence.</p>
+        </div>
+        <div class="hero-card hero-card-accent">
+          <div class="card-label">Built to present</div>
+          <div class="card-value">HTML reports + case showcase</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workspace reveal">
+      <div class="control-column">
+        <div class="panel control-panel">
+          <div class="panel-head">
+            <p class="eyebrow">Analysis Form</p>
+            <h2>Profile + product inputs</h2>
+          </div>
+
+          <div class="sample-row">
+            <button class="sample-chip" data-sample="vegan_pizza">Unsafe pizza</button>
+            <button class="sample-chip" data-sample="safe_salad">Safe salad</button>
+            <button class="sample-chip" data-sample="keto_mix">Keto snack</button>
+          </div>
+
+          <form id="analysis-form" class="analysis-form">
+            <div class="form-grid two-up">
+              <label>
+                <span>Name</span>
+                <input type="text" id="profile-name" value="Alex">
+              </label>
+              <label>
+                <span>Diet</span>
+                <select id="profile-diet">
+                  <option value="">None</option>
+                  <option value="vegan">Vegan</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="gluten-free">Gluten-free</option>
+                  <option value="dairy-free">Dairy-free</option>
+                  <option value="keto">Keto</option>
+                  <option value="low-sodium">Low sodium</option>
+                  <option value="low-sugar">Low sugar</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="form-grid two-up">
+              <label>
+                <span>Allergies</span>
+                <input type="text" id="profile-allergies" placeholder="milk, peanuts, wheat">
+              </label>
+              <label>
+                <span>Avoid list</span>
+                <input type="text" id="profile-avoid" placeholder="gelatin, palm oil">
+              </label>
+            </div>
+
+            <div class="form-grid two-up">
+              <label>
+                <span>Barcode</span>
+                <input type="text" id="barcode" placeholder="Enter UPC / EAN">
+              </label>
+              <label>
+                <span>Image path</span>
+                <input type="text" id="image-path" placeholder="data/input_images/pizza.jpg">
+              </label>
+            </div>
+
+            <label class="file-drop" for="image-file">
+              <span class="file-drop-title">Upload a food image</span>
+              <span class="file-drop-subtitle">Drag a photo here or choose a file for instant preview.</span>
+              <input type="file" id="image-file" accept="image/*">
+            </label>
+
+            <div id="image-preview-wrap" class="image-preview-wrap hidden">
+              <img id="image-preview" alt="Image preview">
+            </div>
+
+            <label>
+              <span>Ingredients / OCR text</span>
+              <textarea id="ingredients-text" rows="6" placeholder="Paste ingredient text here"></textarea>
+            </label>
+
+            <details class="advanced-panel">
+              <summary>Advanced settings</summary>
+              <div class="form-grid">
+                <label>
+                  <span>Dataset path</span>
+                  <input type="text" id="dataset-path" value="data/raw/en.openfoodfacts.org.products.tsv">
+                </label>
+                <label>
+                  <span>Checkpoint path</span>
+                  <input type="text" id="checkpoint-path" value="Food_Vision_Model/checkpoint-2400">
+                </label>
+              </div>
+            </details>
+
+            <div class="action-row">
+              <button type="submit" class="primary-action" id="analyze-button">Run analysis</button>
+              <div id="form-status" class="form-status">Ready</div>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel showcase-panel">
+          <div class="panel-head">
+            <p class="eyebrow">Case Gallery</p>
+            <h2>Generated showcase</h2>
+          </div>
+          <div id="showcase-grid" class="showcase-grid"></div>
+        </div>
+      </div>
+
+      <div class="result-column">
+        <div class="panel result-hero" id="result-shell">
+          <div class="panel-head">
+            <p class="eyebrow">Live output</p>
+            <h2>Your analysis will appear here</h2>
+          </div>
+          <p class="placeholder-copy">
+            Submit a barcode, ingredient list, image path, or uploaded image to generate a full recommendation.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <template id="showcase-card-template">
+    <a class="showcase-card" target="_blank" rel="noreferrer">
+      <span class="showcase-status"></span>
+      <div class="showcase-score"></div>
+      <h3></h3>
+      <p></p>
+    </a>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>

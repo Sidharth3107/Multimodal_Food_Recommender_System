@@ -1,0 +1,12 @@
+﻿numpy
+pandas
+Pillow
+matplotlib
+jinja2
+torch
+transformers
+safetensors
+sentence-transformers
+datasets
+evaluate
+rich

@@ -1,0 +1,104 @@
+{
+  "product_name": "Garden Salad Bowl",
+  "safe_to_eat": true,
+  "status": "safe",
+  "risk_score": 6.95,
+  "risk_breakdown": {
+    "overall": 6.95,
+    "allergy_component": 0.0,
+    "diet_component": 0.0,
+    "nutrition_component": 16.01,
+    "vision_component": 25.0,
+    "detail": {
+      "allergy": 0.0,
+      "diet": 0.0,
+      "nutrition": 16.01,
+      "vision": 25.0,
+      "nutrition_nutrition_score": 23.64,
+      "nutrition_sugars": 8.89,
+      "nutrition_salt": 13.33,
+      "nutrition_saturated_fat": 6.0,
+      "nutrition_energy": 10.0
+    }
+  },
+  "summary": "Garden Salad Bowl looks compatible with the current profile. Estimated risk score: 7.0/100.",
+  "warnings": [],
+  "health_notes": [
+    "Nutrition score is favorable at -2.0.",
+    "Ingredient pattern most closely resembles a salad item."
+  ],
+  "healthier_alternatives": [
+    {
+      "barcode": "00000001002",
+      "product_name": "Roasted Veggie Pizza",
+      "main_category": "Pizza",
+      "nutrition_score": 2.0,
+      "nutrition_grade": "b",
+      "reason": "Compatible with the profile and carries a nutrition score of 2.0."
+    },
+    {
+      "barcode": "00000001004",
+      "product_name": "Keto Nut Mix",
+      "main_category": "Nut Mix",
+      "nutrition_score": 1.0,
+      "nutrition_grade": "b",
+      "reason": "Compatible with the profile and carries a nutrition score of 1.0."
+    }
+  ],
+  "detected_allergens": [],
+  "trace_allergens": [],
+  "diet_conflicts": [],
+  "avoid_matches": [],
+  "parsed_ingredients": [
+    "lettuce",
+    "tomato",
+    "cucumber",
+    "olive oil",
+    "lemon juice"
+  ],
+  "evidence": {
+    "barcode_lookup_used": true,
+    "image_used": false,
+    "ingredients_used": true,
+    "resolved_category": "Salad",
+    "barcode": "00000001003",
+    "nutrition": {
+      "nutrition_score": -2.0,
+      "energy_kj": 250.0,
+      "fat_g": 2.0,
+      "saturated_fat_g": 0.3,
+      "sugars_g": 2.0,
+      "carbohydrates_g": 6.0,
+      "proteins_g": 2.0,
+      "salt_g": 0.2,
+      "nutrition_grade": "a"
+    },
+    "matched_allergen_terms": {},
+    "matched_trace_terms": {},
+    "image_barcode_mismatch": null,
+    "inferred_style": "salad"
+  },
+  "image_prediction": null,
+  "barcode_product": {
+    "barcode": "00000001003",
+    "normalized_barcode": "1003",
+    "product_name": "Garden Salad Bowl",
+    "main_category": "Salad",
+    "ingredients_text": "lettuce, tomato, cucumber, olive oil, lemon juice",
+    "allergens_text": null,
+    "traces_text": null,
+    "image_url": null,
+    "nutrition": {
+      "nutrition_score": -2.0,
+      "energy_kj": 250.0,
+      "fat_g": 2.0,
+      "saturated_fat_g": 0.3,
+      "sugars_g": 2.0,
+      "carbohydrates_g": 6.0,
+      "proteins_g": 2.0,
+      "salt_g": 0.2,
+      "nutrition_grade": "a"
+    },
+    "source": "barcode"
+  }
+}

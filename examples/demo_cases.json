@@ -1,0 +1,51 @@
+﻿[
+  {
+    "id": "fixture_pizza_barcode",
+    "title": "Unsafe pizza barcode for vegan milk-allergic profile",
+    "profile": {
+      "name": "Alex",
+      "allergies": ["lactose"],
+      "diet": "vegan",
+      "avoid_ingredients": ["gelatin"],
+      "strict_mode": true,
+      "health_goals": ["lower sugar", "lower sodium"]
+    },
+    "barcode": "1001",
+    "dataset": "tests/data/sample_openfoodfacts.tsv"
+  },
+  {
+    "id": "fixture_salad_safe",
+    "title": "Safe salad barcode for vegan milk-allergic profile",
+    "profile": {
+      "name": "Alex",
+      "allergies": ["milk"],
+      "diet": "vegan",
+      "avoid_ingredients": ["gelatin"],
+      "strict_mode": true,
+      "health_goals": ["lower sugar", "lower sodium"]
+    },
+    "barcode": "1003",
+    "dataset": "tests/data/sample_openfoodfacts.tsv"
+  },
+  {
+    "id": "fixture_keto_nut_mix",
+    "title": "Keto-friendly nut mix profile check",
+    "profile": {
+      "name": "Riya",
+      "allergies": [],
+      "diet": "keto",
+      "avoid_ingredients": [],
+      "strict_mode": true,
+      "health_goals": ["low carb"]
+    },
+    "barcode": "1004",
+    "dataset": "tests/data/sample_openfoodfacts.tsv"
+  },
+  {
+    "id": "live_pizza_image",
+    "title": "Live image plus ingredients analysis on pizza sample",
+    "profile_path": "examples/profile_alex.json",
+    "image_path": "data/input_images/pizza.jpg",
+    "ingredients_text": "Enriched flour (wheat flour, niacin), tomato puree, mozzarella cheese (milk), pepperoni"
+  }
+]

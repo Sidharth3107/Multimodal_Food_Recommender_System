@@ -1,0 +1,131 @@
+{
+  "product_name": "Pizza-style item",
+  "safe_to_eat": false,
+  "status": "avoid",
+  "risk_score": 85.0,
+  "risk_breakdown": {
+    "overall": 85.0,
+    "allergy_component": 85.0,
+    "diet_component": 60.0,
+    "nutrition_component": 35.0,
+    "vision_component": 26.98,
+    "detail": {
+      "allergy": 85.0,
+      "diet": 60.0,
+      "nutrition": 35.0,
+      "vision": 26.98
+    }
+  },
+  "summary": "Pizza-style item is not recommended for the current profile. Estimated risk score: 85.0/100.",
+  "warnings": [
+    "Direct allergen match for 'milk'.",
+    "Contains 'cheese', which conflicts with a vegan diet.",
+    "Contains 'milk', which conflicts with a vegan diet."
+  ],
+  "health_notes": [
+    "Image model is uncertain: top guess is 'pork chop' at 27.9% confidence.",
+    "Ingredient pattern most closely resembles a pizza item.",
+    "Overall risk is high because the profile constraints dominate the nutrition signal."
+  ],
+  "healthier_alternatives": [
+    {
+      "barcode": "0072368136028",
+      "product_name": "Olive Bruschetta",
+      "main_category": "Bruschetta",
+      "nutrition_score": 1.0,
+      "nutrition_grade": "b",
+      "reason": "Compatible with the profile and carries a nutrition score of 1.0."
+    },
+    {
+      "barcode": "8000300136166",
+      "product_name": "Crostino dorato",
+      "main_category": "Bruschetta",
+      "nutrition_score": 7.0,
+      "nutrition_grade": "c",
+      "reason": "Compatible with the profile and carries a nutrition score of 7.0."
+    },
+    {
+      "barcode": "0072368136011",
+      "product_name": "Sun dried tomato Bruschetta",
+      "main_category": "Bruschetta",
+      "nutrition_score": 16.0,
+      "nutrition_grade": "d",
+      "reason": "Compatible with the profile and carries a nutrition score of 16.0."
+    }
+  ],
+  "detected_allergens": [
+    "milk"
+  ],
+  "trace_allergens": [],
+  "diet_conflicts": [
+    "Contains 'cheese', which conflicts with a vegan diet.",
+    "Contains 'milk', which conflicts with a vegan diet."
+  ],
+  "avoid_matches": [],
+  "parsed_ingredients": [
+    "enriched flour",
+    "wheat flour",
+    "niacin",
+    "tomato puree",
+    "mozzarella cheese",
+    "milk",
+    "pepperoni"
+  ],
+  "evidence": {
+    "barcode_lookup_used": false,
+    "image_used": true,
+    "ingredients_used": true,
+    "resolved_category": null,
+    "barcode": null,
+    "nutrition": {
+      "nutrition_score": null,
+      "energy_kj": null,
+      "fat_g": null,
+      "saturated_fat_g": null,
+      "sugars_g": null,
+      "carbohydrates_g": null,
+      "proteins_g": null,
+      "salt_g": null,
+      "nutrition_grade": null
+    },
+    "matched_allergen_terms": {
+      "milk": [
+        "cheese",
+        "milk"
+      ],
+      "wheat": [
+        "wheat"
+      ]
+    },
+    "matched_trace_terms": {},
+    "image_barcode_mismatch": null,
+    "inferred_style": "pizza"
+  },
+  "image_prediction": {
+    "label": "pork chop",
+    "confidence": 0.2794,
+    "top_k": [
+      {
+        "label": "pork chop",
+        "confidence": 0.2794
+      },
+      {
+        "label": "waffles",
+        "confidence": 0.0766
+      },
+      {
+        "label": "miso soup",
+        "confidence": 0.062
+      },
+      {
+        "label": "hot and sour soup",
+        "confidence": 0.0379
+      },
+      {
+        "label": "steak",
+        "confidence": 0.0263
+      }
+    ]
+  },
+  "barcode_product": null
+}

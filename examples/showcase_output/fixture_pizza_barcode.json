@@ -1,0 +1,115 @@
+{
+  "product_name": "Cheesy Pepperoni Pizza",
+  "safe_to_eat": false,
+  "status": "avoid",
+  "risk_score": 85.0,
+  "risk_breakdown": {
+    "overall": 85.0,
+    "allergy_component": 85.0,
+    "diet_component": 60.0,
+    "nutrition_component": 54.97,
+    "vision_component": 25.0,
+    "detail": {
+      "allergy": 85.0,
+      "diet": 60.0,
+      "nutrition": 54.97,
+      "vision": 25.0,
+      "nutrition_nutrition_score": 52.73,
+      "nutrition_sugars": 22.22,
+      "nutrition_salt": 80.0,
+      "nutrition_saturated_fat": 100.0,
+      "nutrition_energy": 48.0
+    }
+  },
+  "summary": "Cheesy Pepperoni Pizza is not recommended for the current profile. Estimated risk score: 85.0/100.",
+  "warnings": [
+    "Direct allergen match for 'milk'.",
+    "Contains 'cheese', which conflicts with a vegan diet.",
+    "Contains 'milk', which conflicts with a vegan diet."
+  ],
+  "health_notes": [
+    "Nutrition score is high-risk at 14.0; moderation is advisable.",
+    "Salt is elevated at 1.20 g per 100 g.",
+    "Ingredient pattern most closely resembles a pizza item.",
+    "Overall risk is high because the profile constraints dominate the nutrition signal."
+  ],
+  "healthier_alternatives": [
+    {
+      "barcode": "00000001002",
+      "product_name": "Roasted Veggie Pizza",
+      "main_category": "Pizza",
+      "nutrition_score": 2.0,
+      "nutrition_grade": "b",
+      "reason": "Same category with a lower nutrition risk score by 12.0 points."
+    }
+  ],
+  "detected_allergens": [
+    "milk"
+  ],
+  "trace_allergens": [],
+  "diet_conflicts": [
+    "Contains 'cheese', which conflicts with a vegan diet.",
+    "Contains 'milk', which conflicts with a vegan diet."
+  ],
+  "avoid_matches": [],
+  "parsed_ingredients": [
+    "wheat flour",
+    "tomato sauce",
+    "mozzarella cheese",
+    "milk protein",
+    "pepperoni"
+  ],
+  "evidence": {
+    "barcode_lookup_used": true,
+    "image_used": false,
+    "ingredients_used": true,
+    "resolved_category": "Pizza",
+    "barcode": "00000001001",
+    "nutrition": {
+      "nutrition_score": 14.0,
+      "energy_kj": 1200.0,
+      "fat_g": 14.0,
+      "saturated_fat_g": 6.0,
+      "sugars_g": 5.0,
+      "carbohydrates_g": 30.0,
+      "proteins_g": 12.0,
+      "salt_g": 1.2,
+      "nutrition_grade": "d"
+    },
+    "matched_allergen_terms": {
+      "milk": [
+        "cheese",
+        "milk"
+      ],
+      "wheat": [
+        "wheat"
+      ]
+    },
+    "matched_trace_terms": {},
+    "image_barcode_mismatch": null,
+    "inferred_style": "pizza"
+  },
+  "image_prediction": null,
+  "barcode_product": {
+    "barcode": "00000001001",
+    "normalized_barcode": "1001",
+    "product_name": "Cheesy Pepperoni Pizza",
+    "main_category": "Pizza",
+    "ingredients_text": "wheat flour, tomato sauce, mozzarella cheese, milk protein, pepperoni",
+    "allergens_text": "milk,wheat",
+    "traces_text": null,
+    "image_url": null,
+    "nutrition": {
+      "nutrition_score": 14.0,
+      "energy_kj": 1200.0,
+      "fat_g": 14.0,
+      "saturated_fat_g": 6.0,
+      "sugars_g": 5.0,
+      "carbohydrates_g": 30.0,
+      "proteins_g": 12.0,
+      "salt_g": 1.2,
+      "nutrition_grade": "d"
+    },
+    "source": "barcode"
+  }
+}

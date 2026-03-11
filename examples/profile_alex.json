@@ -1,0 +1,8 @@
+﻿{
+  "name": "Alex",
+  "allergies": ["milk"],
+  "diet": "vegan",
+  "avoid_ingredients": ["gelatin"],
+  "strict_mode": true,
+  "health_goals": ["lower sugar", "lower sodium"]
+}
